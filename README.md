@@ -102,16 +102,6 @@ Here's a more comprehensive list of technologies and tools I frequently work wit
 
 ---
 
-### My GitHub Stats
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=[udhaypvr]&show_icons=true&theme=radical&hide_border=true" alt="Your GitHub Stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=[udhaypvr]&theme=radical&hide_border=true" alt="Your GitHub Streak" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=[udhaypvr]&layout=compact&theme=radical&hide_border=true" alt="Top Languages" />
-</div>
-
----
-
 ### 💬 Let's Connect!
 
 I'm always open to discussing new opportunities, collaborations, or just a friendly chat about Web development !
