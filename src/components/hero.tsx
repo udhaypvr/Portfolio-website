@@ -8,7 +8,7 @@ export function Hero() {
     <section id="home" className="container mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16 sm:pt-40 sm:pb-24 flex flex-col items-center justify-center text-center">
       <FadeIn> {/* This FadeIn wraps the headline */}
         <DecryptedText
-          text="Building Digital Experiences"
+          text="I Am Udhay"
           speed={70}
           sequential={true}
           revealDirection="start"
@@ -17,18 +17,16 @@ export function Hero() {
         />
       </FadeIn>
 
-      {/* NEW: Apply DecryptedText to the paragraph */}
-      <FadeIn delay="0.2s"> {/* This FadeIn wraps the paragraph */}
+      
+      <FadeIn delay="0.2s"> 
         <DecryptedText
-          text="Hi, I'm a passionate developer creating modern and responsive web applications. Welcome to my personal space where I share my projects and journey."
-          speed={30} // Adjust speed for paragraph (maybe a bit faster or slower than headline)
-          sequential={true} // Keep it sequential for a typing effect
-          revealDirection="start" // Reveal from start
-          animateOn="view" // Animate on view
+          text="Hi, I specialize in building robust and scalable server-side applications, crafting the logic and infrastructure that powers seamless digital experiences. My focus is on efficient data management, secure APIs, and reliable system architecture to ensure everything runs smoothly behind the scenes."
+          speed={30} 
+          sequential={true} 
+          revealDirection="start" 
+          animateOn="view" 
           parentClassName="mt-6 max-w-2xl text-lg sm:text-xl text-muted-foreground"
-          // You might want to use encryptedClassName and className here for a more distinct effect
-          // encryptedClassName="text-gray-600 opacity-70" // Lighter, slightly transparent scrambling chars
-          // className="text-muted-foreground" // Final color (already in parentClassName, but can be explicit)
+
         />
       </FadeIn>
 
