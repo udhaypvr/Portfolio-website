@@ -44,7 +44,7 @@ export function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="text-2xl font-bold font-headline text-primary">
-            PortFolio
+            BackendCraft
           </Link>
           <nav className="hidden md:flex items-center space-x-1">
             {navLinks.map((link) => (
