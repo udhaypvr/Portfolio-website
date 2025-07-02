@@ -111,7 +111,8 @@ export default function DecryptedText({
             }
         }
 
-        if (isHovering) {
+        // MODIFICATION HERE: Add the condition for animateOn === 'view'
+        if (isHovering || (animateOn === 'view' && !hasAnimated)) {
             setIsScrambling(true)
             interval = setInterval(() => {
                 setRevealedIndices((prevRevealed) => {
@@ -140,9 +141,18 @@ export default function DecryptedText({
                 })
             }, speed)
         } else {
-            setDisplayText(text)
-            setRevealedIndices(new Set())
-            setIsScrambling(false)
+            // Ensure initial state is scrambled if animateOn === 'view'
+            // and it hasn't animated yet, so the effect kicks in.
+            if (animateOn === 'view' && !hasAnimated) {
+                 // Do nothing here, let the interval handle initial display
+                 // or set an initial scrambled state if preferred
+                 setDisplayText(shuffleText(text, new Set())); // Start scrambled
+                 setIsScrambling(true); // Indicate scrambling is active
+            } else {
+                setDisplayText(text)
+                setRevealedIndices(new Set())
+                setIsScrambling(false)
+            }
         }
 
         return () => {
@@ -157,15 +167,18 @@ export default function DecryptedText({
         revealDirection,
         characters,
         useOriginalCharsOnly,
+        animateOn, // Add animateOn to dependencies
+        hasAnimated // Add hasAnimated to dependencies
     ])
 
+    // No changes needed in this useEffect for the Intersection Observer
     useEffect(() => {
         if (animateOn !== 'view') return
 
         const observerCallback = (entries: IntersectionObserverEntry[]) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting && !hasAnimated) {
-                    setIsHovering(true)
+                    setIsHovering(true) // This now correctly triggers the animation
                     setHasAnimated(true)
                 }
             })
@@ -208,7 +221,8 @@ export default function DecryptedText({
             <span aria-hidden="true">
                 {displayText.split('').map((char, index) => {
                     const isRevealedOrDone =
-                        revealedIndices.has(index) || !isScrambling || !isHovering
+                        revealedIndices.has(index) || !isScrambling || (!isHovering && animateOn === 'hover') || (animateOn === 'view' && hasAnimated && !isScrambling);
+
 
                     return (
                         <span
