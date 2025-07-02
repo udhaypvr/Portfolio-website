@@ -8,9 +8,8 @@ import { FadeIn } from './fade-in'; // Assuming FadeIn is in the same directory 
 const skills = [
   'JavaScript', 'Python', 'React', 'Node.js', 'Django', 'Tailwind CSS', 'Tkinter',
   'MongoDB', 'MySQL', 'Firebase', 'Git', 'GitHub', 'VS Code', 'Vercel', 'SQL',
-  'HTML', 'CSS', '// Optionally add other categories if you want them in badges:',
-  // 'User-Centered Design', 'Test-Driven Development (TDD)',
-  // 'Statistical Modeling', // If you want to include data science methodologies
+  'HTML', 'CSS',
+
 ];
 
 export function About() {
@@ -25,7 +24,7 @@ export function About() {
           <div className="md:col-span-1 flex justify-center">
             <FadeIn delay="0.2s"> {/* Stagger delay for image */}
               <Image
-                src="/path/to/your-profile-picture.jpg" // **IMPORTANT: Replace with your actual image path**
+                src="/path/to/udhay.jpg"
                 alt="Portrait of Udhay, the backend developer"
                 width={300}
                 height={300}
