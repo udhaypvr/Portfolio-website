@@ -16,8 +16,8 @@ export function Hero() {
         <Squares
           direction="diagonal" // You can customize these props
           speed={0.5}
-          borderColor="#333"
-          hoverFillColor="#0a0a0a"
+          borderColor="#333" // Keep this dark to contrast with the text
+          hoverFillColor="#0a0a0a" // Keep this dark
           squareSize={50}
         />
       </div>
@@ -31,7 +31,7 @@ export function Hero() {
             sequential={true}
             revealDirection="start"
             animateOn="view"
-            parentClassName="text-4xl sm:text-5xl lg:text-6xl font-extrabold font-headline tracking-tight"
+            parentClassName="text-4xl sm:text-5xl lg:text-6xl font-extrabold font-headline tracking-tight text-white" // Added text-white here for headline too
           />
         </FadeIn>
 
@@ -42,7 +42,8 @@ export function Hero() {
             sequential={true}
             revealDirection="start"
             animateOn="view"
-            parentClassName="mt-6 max-w-2xl text-lg sm:text-xl text-muted-foreground"
+            // CHANGED THIS LINE:
+            parentClassName="mt-6 max-w-2xl text-lg sm:text-xl text-gray-200" // Changed from text-muted-foreground
           />
         </FadeIn>
 
