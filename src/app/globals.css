@@ -9,7 +9,7 @@
 
   
   body {
-    cursor: url('/pointer.cur'), auto;
+    cursor: url('/cursor.cur'), auto;
     @apply bg-background text-foreground; 
   }
 
