@@ -25,10 +25,6 @@ export function About() {
           dotSize={8}
           gap={24}
           proximity={100}
-          speedTrigger={50}
-          shockRadius={150}
-          shockStrength={3}
-          returnDuration={1.2}
         />
       </div>
 
