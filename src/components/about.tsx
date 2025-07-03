@@ -20,8 +20,8 @@ export function About() {
       {/* DotGrid Background */}
       <div className="absolute inset-0 z-0">
         <DotGrid
-          baseColor="#5227FF" // Example: Darker blue for base dots
-          activeColor="#FFD700" // Example: Yellow for active dots on hover
+          baseColor="#FFFFFF" 
+          activeColor="#CCCCCC" 
           dotSize={8}
           gap={24}
           proximity={100}
