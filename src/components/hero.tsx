@@ -11,18 +11,18 @@ export function Hero() {
       id="home"
       className="relative container mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16 sm:pt-40 sm:pb-24 flex flex-col items-center justify-center text-center overflow-hidden"
     >
-      {/* Background Squares Component */}
+      
       <div className="absolute inset-0 z-0">
         <Squares
-          direction="diagonal" // You can customize these props
+          direction="down"
           speed={0.5}
-          borderColor="#333" // Keep this dark to contrast with the text
-          hoverFillColor="#0a0a0a" // Keep this dark
+          borderColor="#333" 
+          hoverFillColor="#0a0a0a" 
           squareSize={50}
         />
       </div>
 
-      {/* Content of the Hero section, layered above the background */}
+      
       <div className="relative z-10">
         <FadeIn>
           <DecryptedText
@@ -42,7 +42,6 @@ export function Hero() {
             sequential={true}
             revealDirection="start"
             animateOn="view"
-            // CHANGED THIS LINE:
             parentClassName="mt-6 max-w-2xl text-lg sm:text-xl text-black" 
           />
         </FadeIn>
