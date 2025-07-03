@@ -1,21 +1,39 @@
-"use client"; // Add this if this component uses client-side hooks or direct DOM manipulation,
-              // or if it renders components (like FadeIn) that are marked "use client"
+'use client';
 
 import Image from 'next/image';
 import { Badge } from '@/components/ui/badge';
-import { FadeIn } from './fade-in'; // Assuming FadeIn is in the same directory or accessible via this path
+import { FadeIn } from './fade-in';
+import DotGrid from '@/components/ui/grid'; // Ensure this path is correct for your project
 
 const skills = [
   'JavaScript', 'Python', 'React', 'Node.js', 'Django', 'Tailwind CSS', 'Tkinter',
   'MongoDB', 'MySQL', 'Firebase', 'Git', 'GitHub', 'VS Code', 'Vercel', 'SQL',
   'HTML', 'CSS',
-
 ];
 
 export function About() {
   return (
-    <section id="about" className="bg-white dark:bg-gray-900 py-20 sm:py-28"> {/* Added dark mode background */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section
+      id="about"
+      className="relative py-20 sm:py-28 overflow-hidden" // Make section relative for absolute DotGrid, hide overflow
+    >
+      {/* DotGrid Background */}
+      <div className="absolute inset-0 z-0">
+        <DotGrid
+          baseColor="#5227FF" // Example: Darker blue for base dots
+          activeColor="#FFD700" // Example: Yellow for active dots on hover
+          dotSize={8}
+          gap={24}
+          proximity={100}
+          speedTrigger={50}
+          shockRadius={150}
+          shockStrength={3}
+          returnDuration={1.2}
+        />
+      </div>
+
+      {/* Content of the About section, placed above the DotGrid */}
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10"> {/* Ensure content is above DotGrid */}
         <FadeIn>
           <h2 className="text-3xl sm:text-4xl font-bold font-headline text-center text-foreground dark:text-white">About Me</h2>
         </FadeIn>
@@ -24,7 +42,7 @@ export function About() {
           <div className="md:col-span-1 flex justify-center">
             <FadeIn delay="0.2s"> {/* Stagger delay for image */}
               <Image
-                src="/path/to/udhay.jpg"
+                src="/path/to/udhay.jpg" // REMINDER: Update this path to your actual image
                 alt="Portrait of Udhay, the backend developer"
                 width={300}
                 height={300}
