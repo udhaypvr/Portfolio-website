@@ -4,7 +4,7 @@ import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
   title: 'StaticFolio',
-  description: 'A personal portfolio website, created with Next.js and Firebase Studio.',
+  description: 'A personal portfolio website',
 };
 
 export default function RootLayout({
