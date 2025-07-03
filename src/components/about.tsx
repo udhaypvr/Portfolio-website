@@ -38,7 +38,7 @@ export function About() {
           <div className="md:col-span-1 flex justify-center">
             <FadeIn delay="0.2s">
               <Image
-                src="/udhay.jpg" 
+                src="/me.png" 
                 alt="Portrait of Udhay, the backend developer"
                 width={300}
                 height={300}
