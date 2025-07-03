@@ -43,6 +43,7 @@ export function About() {
                 width={300}
                 height={300}
                 className="rounded-full shadow-lg aspect-square object-cover"
+                unoptimized={true}
               />
             </FadeIn>
           </div>
