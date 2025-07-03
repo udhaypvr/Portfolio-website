@@ -36,14 +36,17 @@ export function Hero() {
         </FadeIn>
 
         <FadeIn delay="0.2s">
-          <DecryptedText
-            text="Hi, I specialize in building robust and scalable server-side applications, crafting the logic and infrastructure that powers seamless digital experiences. My focus is on efficient data management, secure APIs, and reliable system architecture to ensure everything runs smoothly behind the scenes."
-            speed={30}
-            sequential={true}
-            revealDirection="start"
-            animateOn="view"
-            parentClassName="mt-6 max-w-2xl text-lg sm:text-xl text-yellow-300"
-          />
+          {/* This is the change: Wrapping DecryptedText with a div for the blue background */}
+          <div className="bg-blue-600 px-4 py-2 rounded-lg inline-block">
+            <DecryptedText
+              text="Hi, I specialize in building robust and scalable server-side applications, crafting the logic and infrastructure that powers seamless digital experiences. My focus is on efficient data management, secure APIs, and reliable system architecture to ensure everything runs smoothly behind the scenes."
+              speed={30}
+              sequential={true}
+              revealDirection="start"
+              animateOn="view"
+              parentClassName="mt-6 max-w-2xl text-lg sm:text-xl text-yellow-300"
+            />
+          </div>
         </FadeIn>
 
         <FadeIn delay="0.4s">
