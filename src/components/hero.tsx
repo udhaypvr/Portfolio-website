@@ -43,7 +43,7 @@ export function Hero() {
               sequential={true}
               revealDirection="start"
               animateOn="view"
-              parentClassName="mt-6 max-w-2xl text-lg sm:text-xl text-red"
+              parentClassName="mt-6 max-w-2xl text-lg sm:text-xl text-white bg-blue-600 px-1.5 py-0.5 rounded-sm text-highlight-effect"
             />
 
         </FadeIn>
