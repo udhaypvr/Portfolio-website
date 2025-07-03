@@ -49,13 +49,13 @@ export function About() {
 
           <div className="md:col-span-2">
             <FadeIn delay="0.3s">
-              <p className="text-lg text-white">
+              <p className="text-lg text-white bg-blue-600 px-1.5 py-0.5 rounded-sm text-highlight-effect">
                 Hi there! I'm UDHAY, a passionate **Back-end enthusiast** with a knack for building full-scale websites and web apps. This repository serves as a showcase of my work, demonstrating my skills, projects, and the journey I'm on in the world of Development.
               </p>
             </FadeIn>
 
             <FadeIn delay="0.4s">
-              <p className="mt-4 text-lg text-white">
+              <p className="mt-4 text-lg text-white bg-blue-600 px-1.5 py-0.5 rounded-sm text-highlight-effect">
                 My expertise lies in developing the core logic and infrastructure that powers seamless user interactions. I focus on efficient data management, secure APIs, and reliable system architecture, ensuring everything runs smoothly behind the scenes. I'm always eager to learn new technologies and improve my craft, driven by a passion for creating solutions that solve real-world problems.
               </p>
             </FadeIn>
