@@ -95,9 +95,14 @@
     background-clip: text;
     color: transparent;
   }
+
+  .text-gradient-yellow-red {
+    background: linear-gradient(to right, #FFD700, #FF4500); /* Gold to Orange-Red */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
 }
-
-
 @layer base {
   * {
     @apply border-border;
@@ -106,3 +111,4 @@
     @apply bg-background text-foreground;
   }
 }
+

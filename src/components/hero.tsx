@@ -42,7 +42,7 @@ export function Hero() {
             sequential={true}
             revealDirection="start"
             animateOn="view"
-            parentClassName="mt-6 max-w-2xl text-lg sm:text-xl text-black" 
+            parentClassName="mt-6 max-w-2xl text-lg sm:text-xl text-gradient-yellow-red"
           />
         </FadeIn>
 
