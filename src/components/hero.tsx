@@ -43,7 +43,7 @@ export function Hero() {
               sequential={true}
               revealDirection="start"
               animateOn="view"
-              parentClassName="mt-6 max-w-2xl text-lg sm:text-xl text-blue-400" // Example blue shade, adjust as needed
+              parentClassName="mt-6 max-w-2xl text-lg sm:text-xl text-blue-900"
             />
 
         </FadeIn>
