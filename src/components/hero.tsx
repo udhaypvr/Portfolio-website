@@ -31,7 +31,7 @@ export function Hero() {
             sequential={true}
             revealDirection="start"
             animateOn="view"
-            parentClassName="text-4xl sm:text-5xl lg:text-6xl font-extrabold font-headline tracking-tight text-white" // Added text-white here for headline too
+            parentClassName="text-4xl sm:text-5xl lg:text-6xl font-extrabold font-headline tracking-tight text-black"
           />
         </FadeIn>
 
@@ -43,7 +43,7 @@ export function Hero() {
             revealDirection="start"
             animateOn="view"
             // CHANGED THIS LINE:
-            parentClassName="mt-6 max-w-2xl text-lg sm:text-xl text-gray-200" // Changed from text-muted-foreground
+            parentClassName="mt-6 max-w-2xl text-lg sm:text-xl text-black" 
           />
         </FadeIn>
 
