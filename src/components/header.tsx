@@ -49,7 +49,10 @@ export function Header() {
           <nav className="hidden md:flex items-center space-x-1">
             {navLinks.map((link) => (
               <Button key={link.href} asChild variant="ghost">
-                <Link href={link.href}>{link.label}</Link>
+                {/* Apply the gradient class here */}
+                <Link href={link.href} className="text-gradient-green-blue">
+                  {link.label}
+                </Link>
               </Button>
             ))}
           </nav>
@@ -66,7 +69,10 @@ export function Header() {
           <nav className="flex flex-col items-stretch space-y-1 px-4 pb-4 pt-2">
             {navLinks.map((link) => (
               <Button key={link.href} asChild variant="ghost" className="w-full justify-start" onClick={() => setIsMenuOpen(false)}>
-                <Link href={link.href}>{link.label}</Link>
+                {/* Apply the gradient class here for mobile menu as well */}
+                <Link href={link.href} className="text-gradient-green-blue">
+                  {link.label}
+                </Link>
               </Button>
             ))}
           </nav>
