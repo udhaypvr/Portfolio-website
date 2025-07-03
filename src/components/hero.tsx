@@ -16,8 +16,8 @@ export function Hero() {
         <Squares
           direction="down"
           speed={0.5}
-          borderColor="#333" 
-          hoverFillColor="#0a0a0a" 
+          borderColor="#333"
+          hoverFillColor="#0a0a0a"
           squareSize={50}
         />
       </div>
@@ -31,22 +31,21 @@ export function Hero() {
             sequential={true}
             revealDirection="start"
             animateOn="view"
-            parentClassName="text-4xl sm:text-5xl lg:text-6xl font-extrabold font-headline tracking-tight text-black"
+            parentClassName="text-4xl sm:text-5xl lg:text-6xl font-extrabold font-headline tracking-tight text-black" // Headline is still black
           />
         </FadeIn>
 
         <FadeIn delay="0.2s">
-          {/* This is the change: Wrapping DecryptedText with a div for the blue background */}
-          <div className="bg-blue-600 px-4 py-2 rounded-lg inline-block">
+
             <DecryptedText
               text="Hi, I specialize in building robust and scalable server-side applications, crafting the logic and infrastructure that powers seamless digital experiences. My focus is on efficient data management, secure APIs, and reliable system architecture to ensure everything runs smoothly behind the scenes."
               speed={30}
               sequential={true}
               revealDirection="start"
               animateOn="view"
-              parentClassName="mt-6 max-w-2xl text-lg sm:text-xl text-yellow-300"
+              parentClassName="mt-6 max-w-2xl text-lg sm:text-xl text-blue-400" // Example blue shade, adjust as needed
             />
-          </div>
+
         </FadeIn>
 
         <FadeIn delay="0.4s">
