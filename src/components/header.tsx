@@ -43,13 +43,13 @@ export function Header() {
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="text-2xl font-bold font-headline text-primary">
+          <Link href="/" className="text-2xl font-bold font-headline text-gradient-green-blue">
             BackendCraft
           </Link>
           <nav className="hidden md:flex items-center space-x-1">
             {navLinks.map((link) => (
               <Button key={link.href} asChild variant="ghost">
-                {/* Apply the gradient class here */}
+                
                 <Link href={link.href} className="text-gradient-green-blue">
                   {link.label}
                 </Link>
