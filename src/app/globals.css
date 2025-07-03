@@ -7,6 +7,12 @@
     @apply scroll-smooth;
   }
 
+  
+  body {
+    cursor: url('/pointer.cur'), auto;
+    @apply bg-background text-foreground; 
+  }
+
   :root {
     --background: 208 27% 95%; /* #F0F4F7 */
     --foreground: 215 11% 30%; /* #434A54 */
@@ -81,9 +87,9 @@
 
 /* ADD THE CUSTOM GRADIENT CLASS HERE */
 @layer utilities {
-  
+
   .text-highlight-effect {
-    box-decoration-break: clone; 
+    box-decoration-break: clone;
   }
   .text-gradient-green-blue {
     background: linear-gradient(to right, #00b09b, #96c93d); /* Example: Teal to Lime Green */
@@ -107,12 +113,10 @@
     color: transparent;
   }
 }
+
 @layer base {
   * {
     @apply border-border;
   }
-  body {
-    @apply bg-background text-foreground;
-  }
+  /* The body rule was moved up to include the cursor property */
 }
-
