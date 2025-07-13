@@ -40,7 +40,7 @@ const projects = [
 
 export function Projects() {
   return (
-    <section id="projects" className="py-20 sm:py-28 bg-black"> 
+    <section id="projects" className="py-20 sm:py-28 bg-gray"> 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         
         <h2 className="text-3xl sm:text-4xl font-bold font-headline text-center text-white">My Projects</h2>
