@@ -1,4 +1,4 @@
-// components/fade-in.tsx
+
 "use client";
 
 import { useRef, useEffect, useState, type ReactNode, type FC } from "react";
