@@ -1,32 +1,40 @@
+
 import { ProjectCard } from '@/components/project-card';
+
 
 const projects = [
   {
-    title: 'E-commerce Platform',
-    description: 'A full-featured e-commerce site with product listings, a shopping cart, and a checkout process, built with Next.js and Stripe.',
+    title: 'Hospital Management System (MySQL)',
+    description: 'A comprehensive system to manage hospital data, with data access via MySQL.',
     imageUrl: 'https://placehold.co/600x400.png',
-    tags: ['Next.js', 'React', 'Stripe', 'Tailwind CSS'],
-    liveUrl: '#',
-    repoUrl: '#',
-    imageHint: 'e-commerce website',
+    tags: ['Python', 'Tkinter', 'MySQL'],
+    repoUrl: 'https://github.com/udhaypvr/hospital-management-system-mysql',
+    imageHint: 'Hospital management system UI with MySQL'
   },
   {
-    title: 'Task Management App',
-    description: 'A productivity app to help users organize their tasks, set deadlines, and track progress. Features include drag-and-drop and real-time updates.',
+    title: 'Hospital Management System (MongoDB)',
+    description: 'A robust system to manage hospital data, with data access from a MongoDB server.',
     imageUrl: 'https://placehold.co/600x400.png',
-    tags: ['React', 'Firebase', 'dnd-kit'],
-    liveUrl: '#',
-    repoUrl: '#',
-    imageHint: 'task management app',
+    tags: ['Python', 'Tkinter', 'MongoDB'],
+    repoUrl: 'https://github.com/udhaypvr/hospital-management-system-mongodb',
+    imageHint: 'Hospital management system UI with MongoDB'
   },
   {
-    title: 'Portfolio Website',
-    description: 'A personal portfolio to showcase my skills and projects, featuring a clean design and smooth animations.',
+    title: 'Hackathon - Webstyledown',
+    description: 'A website for ACM, built exclusively with HTML and CSS for a hackathon contest.',
     imageUrl: 'https://placehold.co/600x400.png',
-    tags: ['Next.js', 'TypeScript'],
-    liveUrl: '#',
-    repoUrl: '#',
-    imageHint: 'portfolio website',
+    tags: ['HTML', 'CSS'],
+    liveUrl: 'https://udhaypvr.github.io/webstyledown/',
+    repoUrl: 'https://github.com/udhaypvr/webstyledown/',
+    imageHint: 'Web design hackathon website'
+  },
+  {
+    title: 'Hackathon - AR/VR & IoT',
+    description: 'An innovative project to enhance large vehicle maintenance using AR/VR immersive models and real-time IoT diagnostics.',
+    imageUrl: 'https://placehold.co/600x400.png',
+    tags: ['Unity', 'Blender', 'C#', 'Node.js', 'TypeScript', 'Arduino', 'Firebase'],
+    repoUrl: 'https://github.com/udhaypvr/project-hackathon',
+    imageHint: 'AR/VR and IoT project for vehicle maintenance'
   },
 ];
 
