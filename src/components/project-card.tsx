@@ -18,18 +18,6 @@ interface ProjectCardProps {
 export function ProjectCard({ title, description, imageUrl, tags, liveUrl, repoUrl, imageHint }: ProjectCardProps) {
   return (
     <Card className="flex flex-col h-full overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white">
-      <CardHeader className="p-0">
-        <div className="aspect-video overflow-hidden">
-          <Image
-            src={imageUrl}
-            alt={title}
-            width={600}
-            height={400}
-            className="object-cover w-full h-full"
-            data-ai-hint={imageHint}
-          />
-        </div>
-      </CardHeader>
       <CardContent className="flex-grow p-6">
         <CardTitle className="font-headline text-xl mb-2">{title}</CardTitle>
         <div className="flex flex-wrap gap-2 mb-4">
