@@ -40,11 +40,11 @@ const projects = [
 
 export function Projects() {
   return (
-    <section id="projects" className="py-20 sm:py-28 bg-gray"> 
+    <section id="projects" className="py-20 sm:py-28 bg-black"> 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         
         <h2 className="text-3xl sm:text-4xl font-bold font-headline text-center text-white">My Projects</h2>
-        <p className="mt-4 max-w-2xl mx-auto text-center text-lg text-white-300">
+        <p className="mt-4 max-w-2xl mx-auto text-center text-lg text-white">
           Here are some of the projects I&apos;ve worked on.
         </p>
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
