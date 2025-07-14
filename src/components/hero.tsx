@@ -39,7 +39,7 @@ export function Hero() {
 
             <DecryptedText
               text="Hi, I specialize in building robust and scalable server-side applications, crafting the logic and infrastructure that powers seamless digital experiences. My focus is on efficient data management, secure APIs, and reliable system architecture to ensure everything runs smoothly behind the scenes."
-              speed={30}
+              speed={10}
               sequential={true}
               revealDirection="start"
               animateOn="view"
